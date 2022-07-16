@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Amenities>
+
+<h2>Amenities</h2>
+<table class="table">
+    <tr>
+        <th>AmenitiesId</th>
+        <th>Name</th>
+        <th>AdditionalAmenitiesCost</th>
+    </tr>
+
+    @foreach (var Amenities in Model)
+    {
+        <tr>
+            <td>@Amenities.AmenitiesId</td>
+            <td>@Amenities.Name</td>
+            <td>@Amenities.AdditionalAmenitiesCost</td>
+        </tr>
+    }
+</table>
